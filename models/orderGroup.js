@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    var OrderMaster = sequelize.define("OrderMaster", {
+    var OrderGroup = sequelize.define("OrderGroup", {
         ordername: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -29,5 +29,5 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING
         }
     })
-    return OrderMaster;
+    return OrderGroup;
 }

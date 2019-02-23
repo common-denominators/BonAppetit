@@ -11,5 +11,19 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING
         }
     })
+
+    OrderDetail.associate = function (models) {
+        OrderDetail.belongsTo(models.OrderGroup, {
+            foreignKey: {
+                allowNull: false
+            }
+        });
+        OrderDetail.hasMany(models.User, {
+            foreignKey: {
+                allowNull: false
+            }
+        })
+    }
+
     return OrderDetail;
 }
