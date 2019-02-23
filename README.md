@@ -14,4 +14,4 @@ Some sort of Menu API (openmenu)
 
 The ability to randomly select restaurants within proximity if you can't decide.
 Voting ability within the application to let users have feedback on where they eat.
-Ability to look into coupons for restaurant selections
+Ability to look into coupons for restaurant selections.
